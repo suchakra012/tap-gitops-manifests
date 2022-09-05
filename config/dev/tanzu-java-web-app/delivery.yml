@@ -5,6 +5,8 @@ metadata:
   labels:
     app.kubernetes.io/part-of: tanzu-java-web-app
     apps.tanzu.vmware.com/workload-type: web
+    tanzu.app.live.view: "true"
+    tanzu.app.live.view.application.name: tanzu-java-web-app
     app.kubernetes.io/component: run
     carto.run/workload-name: tanzu-java-web-app
 spec:
@@ -38,7 +40,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: index.docker.io/chakrabortsu181/tanzu-java-web-app-dev@sha256:1b1446256c3d6e83c1066b503d7fe2e6a0ea44e175b3704b7557e2daeee6ef8a
+        image: index.docker.io/chakrabortsu181/tanzu-java-web-app-dev@sha256:5a8cdef3e45d770c7c565461adc4635854b659f2a4991b2733a40a35bf171c7e
         name: workload
         ports:
         - containerPort: 8080
