@@ -42,7 +42,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: index.docker.io/chakrabortsu181/tanzu-java-web-app-dev@sha256:86877f5dfbc21ced874ca12b01d9481800f9c39a008f40f291abdf9945768289
+        image: index.docker.io/chakrabortsu181/tanzu-java-web-app-dev@sha256:8c7d02aa5f7b98ba970801fc61ec449efdb015b35485deaa50d6382ea56e7a94
         name: workload
         ports:
         - containerPort: 8080
